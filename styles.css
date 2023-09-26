@@ -24,7 +24,7 @@ nav{
     margin: 20px;
 }
 nav ul{
-    margin-left: 600px;
+    margin-left: 300px;
 }
 nav ul li{
     display: inline-block;
@@ -54,7 +54,6 @@ section {
     padding: 20px;
     color: white;
     border-radius: 5px;
-    height: 95vh;
 }
 h1{
     font-size: 40px;
