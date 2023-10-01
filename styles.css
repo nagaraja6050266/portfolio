@@ -24,7 +24,7 @@ nav{
     margin: 20px;
 }
 nav ul{
-    margin-left: 300px;
+    margin-left: 250px;
 }
 nav ul li{
     display: inline-block;
@@ -59,15 +59,18 @@ h1{
     font-size: 40px;
     color: yellow;
 }
-#profileimg{
-    width: 20%;
-    height: auto;   
-    border-radius: 30px;
-}
 a{
     text-decoration: none;
 }
-.profile{
-    display: flex;
-    gap: 40px;
+.circle{
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    border: solid 10px;
+    border-color: yellow;
+    shape-outside: circle();
 }
