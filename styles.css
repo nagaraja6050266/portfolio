@@ -44,7 +44,7 @@ nav ul li a{
     padding-top: 15%;
     color: rgb(237, 237, 237);
     font-size: 30px;
-    background-image: url(images/background.jpg);
+    background-image: url(Images/background.jpg);
     background-size: cover;
     height: 100vh;
 }
