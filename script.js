@@ -3,21 +3,17 @@ window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("nav").style.top = "0";
+        document.getElementById("scrollup").style.marginTop = "90vh";
     } else {
         document.getElementById("nav").style.top = "-100px";
+        document.getElementById("scrollup").style.marginTop = "100vh";
     }
     prevScrollpos = currentScrollPos;
 }
-// Function to fade in the element
-function fadeIn() {
-    var animatedElement = document.getElementById("animatedElement");
-
-    var rect = animatedElement.getBoundingClientRect();
-    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-    // Check if the element is in the viewport
-    if (rect.top >= 0 && rect.bottom <= windowHeight) {
-        animatedElement.style.opacity = 1; // Make the element visible
-        animatedElement.classList.add("fade-in"); // Apply a fade-in animation class
-    }
-}
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }  
+  
